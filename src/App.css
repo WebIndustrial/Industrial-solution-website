@@ -1,0 +1,53 @@
+/* App-specific styles */
+.App {
+  min-height: 100vh;
+}
+
+/* Ensure smooth scrolling works across browsers */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom selection color */
+::selection {
+  background-color: rgba(14, 165, 233, 0.3);
+  color: #0F172A;
+}
+
+/* Form input placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: #94A3B8;
+}
+
+/* Focus visible for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #0EA5E9;
+  outline-offset: 2px;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Loading state for buttons */
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* Link hover transitions */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Card shadows on hover */
+.card-hover:hover {
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 
+              0 8px 10px -6px rgba(15, 23, 42, 0.1);
+}
